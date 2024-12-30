@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+
+    <!-- google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bree+Serif&family=Comfortaa:wght@300..700&family=Nerko+One&family=Pacifico&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:wght@200..900&family=Titillium+Web:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- fontawome css -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- main file css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class=" bg-dark">
+
+
+    <section class="games" id="games">
+        <header>
+            <img src="./imges/wraper (1).png" alt="game photo">
+
+        </header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <h5 class="navbar-brand text-uppercase">
+                    <img src="./imges/logo-sm.png" alt="logo photo"> Game Reviews
+                </h5>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="small navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0  ">
+                        <li class="nav-item">
+                            <a class="nav-link active text-uppercase" id="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" id="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" id="sailing">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" id="permadeath">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" id="superhero">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" id="pixel">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+
+    <section class="display-crid py-5 " id="display-crid">
+        <div class="container">
+            <div class="row g-5  " id="card-body">
+                <div class="col-md-3   " id="click-details">
+                    <div class="crad p-4 bg-dark text-white"></div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="details d-none" id="details">
+
+        <div class="container bg-dark text-white">
+            <div class="row" id="container">
+                <div class="col-md-6">
+                    <header class="hstack justify-content-between">
+                        <h1 class="text-center h3 py-4">Details Game</h1>
+                        <button class="btn-close btn-close-white" id="btnClose"></button>
+                    </header>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <div class="row g-4" id="detailsContent">
+                        <div class="col-md-4">
+                            <img src="https://www.freetogame.com/g/226/thumbnail.jpg" class="w-100" alt="image details">
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Title: Path of Exile</h3>
+                            <p>Category: <span class="badge text-bg-info"> MMORPG</span> </p>
+                            <p>Platform: <span class="badge text-bg-info"> Windows</span> </p>
+                            <p>Status: <span class="badge text-bg-info"> Live</span> </p>
+                            <p class="small">
+                            </p>
+                            <a class="btn btn-outline-warning" target="_blank"
+                                href="https://www.freetogame.com/open/path-of-exile">Show Game</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <div id="loading" class="loading d-none">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+
+
+
+    <!------------------ Bootstrap js ----------------------->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!------------------------ js file----------------------->
+
+    <script type="module" src="./js/main.js"></script>
+    <!-- <script type="module" src="./js/ui.js"></script> -->
+</body>
+
+</html>
