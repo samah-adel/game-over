@@ -1,0 +1,157 @@
+:root {
+    --maincolor: rgb(58, 73, 123);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Comfortaa", cursive;
+
+}
+
+/* home page photo */
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+
+/* nav start */
+
+
+nav {
+    background-color: var(--maincolor);
+    width: 75%;
+    margin-inline: auto;
+    margin-top: -30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+    z-index: 999999999;
+}
+
+@media (max-width: 991px) {
+    nav {
+        width: 95%;
+    }
+}
+
+nav .container h5 {
+    color: #FFFFFF;
+    font-family: "Nerko One", cursive;
+
+    font-size: 20px;
+    margin: 0px 16px 0px 0px;
+    line-height: 24px;
+    padding: 5px 0px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none solid rgb(255, 255, 255);
+
+}
+
+nav .container h5:hover {
+    color: #FFFFFF;
+}
+
+nav .container h5 img {
+    max-width: 40px;
+}
+
+
+.navbar-collapse ul li a {
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 12.25px;
+    font-weight: 400;
+    margin: 0;
+    padding: 8px;
+    text-decoration: none solid rgb(0, 153, 204);
+    text-align: start;
+}
+
+
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+    color: rgb(0, 153, 204);
+
+}
+
+
+
+/* nav end */
+
+
+
+
+
+
+
+
+
+
+/* crad start */
+#display-card .row .col .card {
+    transition: all 1s;
+}
+
+#display-card .row .col .card:hover {
+    content: "";
+    transform: scale(1.05)
+}
+
+
+
+
+/* loading start */
+.loading {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: relative;
+
+}
+
+@keyframes rotation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-reverse {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-bottom: 4px solid #ff0000;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    position: absolute;
+    animation: rotation-reverse 1s linear infinite;
+}
+
+
+
+@keyframes rotation-reverse {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/* loading end*/
